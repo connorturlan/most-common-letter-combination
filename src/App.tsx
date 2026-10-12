@@ -45,6 +45,8 @@ function App() {
       onDragStart={dragStart}
       onDragEnter={dragEnter}
       onDragEnd={drop}
+      onTouchStart={dragStart}
+      onTouchEnd={drop}
       draggable
       >
         <p>
