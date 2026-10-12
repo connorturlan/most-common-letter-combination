@@ -63,16 +63,17 @@ function App() {
 
   return (
     <div className='container'>
-    <ul className='list'>
-      <li><p>1st</p></li>
-      <li><p>2nd</p></li>
-      <li><p>3rd</p></li>
-    </ul>
-    <ul className='list'>
-      {React.Children.toArray(rows)}
-    </ul>
-    <button className='submit' onClick={checkAnswer}>check</button>
-    <p className='submit'>{submitted && (result ? "correct!" : "try again")}</p>
+      <ul className='list'>
+        <li><p>1st</p></li>
+        <li><p>2nd</p></li>
+        <li><p>3rd</p></li>
+      </ul>
+      <ul className='list'>
+        {React.Children.toArray(rows)}
+      </ul>
+      <button className='submit' onClick={checkAnswer}>check</button>
+      <p className='submit'>{submitted && (result ? "correct!" : "try again")}</p>
+      <a style={{position:"absolute", bottom:0, right:0, margin: "12px"}} href='https://github.com/connorturlan/most-common-letter-combination'>github</a>
     </div>
   )
 }
